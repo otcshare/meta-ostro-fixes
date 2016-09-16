@@ -1,0 +1,16 @@
+diff --git a/util/perlpath.pl b/util/perlpath.pl
+index a1f236b..042e6aa 100755
+--- a/util/perlpath.pl
++++ b/util/perlpath.pl
+@@ -4,6 +4,8 @@
+ # line in all scripts that rely on perl.
+ #
+ 
++use lib ".";
++
+ require "find.pl";
+ 
+ $#ARGV == 0 || print STDERR "usage: perlpath newpath  (eg /usr/bin)\n";
+-- 
+2.9.3
+
